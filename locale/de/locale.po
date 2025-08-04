@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Martin Brändle\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-12-29T19:41:00\n"
+"PO-Revision-Date: 2025-07-26T15:00:00\n"
+"Language: en\n"
+
+msgid "plugins.block.navigation"
+msgstr "Navigation"
+
+msgid "plugins.block.navigation.displayName"
+msgstr "Navigations-Block"
+
+msgid "plugins.block.navigation.description"
+msgstr "Dieses Plugin bietet in der Seitenleiste Werkzeuge für die Navigation durch Ausgaben und Artikel."
+
+msgid "plugins.block.navigation.articles"
+msgstr "Artikel durchbl�ttern"
+
+msgid "plugins.block.navigation.previousissuearticle"
+msgstr "Vorherige Ausgabe"
+
+msgid "plugins.block.navigation.nextissuearticle"
+msgstr "Nächste Ausgabe"
+
+msgid "plugins.block.navigation.firstarticle"
+msgstr "Erster Artikel"
+
+msgid "plugins.block.navigation.previousarticle"
+msgstr "Vorheriger Artikel"
+
+msgid "plugins.block.navigation.nextarticle"
+msgstr "Nächster Artikel"
+
+msgid "plugins.block.navigation.lastarticle"
+msgstr "Letzer Artikel"
+
+msgid "plugins.block.navigation.toc"
+msgstr "Inhaltsverzeichnis"
+
+msgid "plugins.block.navigation.issues"
+msgstr "Ausgaben durchbl�ttern"
+
+msgid "plugins.block.navigation.firstissue"
+msgstr "Erste Ausgabe"
+
+msgid "plugins.block.navigation.previousissue"
+msgstr "Vorherige Ausgabe"
+
+msgid "plugins.block.navigation.nextissue"
+msgstr "Nächste Ausgabe"
+
+msgid "plugins.block.navigation.lastissue"
+msgstr "Letzte Ausgabe"
+
+msgid "plugin.block.navigation.archives"
+msgstr "Alle Ausgaben"
+
+msgid "plugins.block.navigation.volume"
+msgstr "Vol."
+
+msgid "plugins.block.navigation.number"
+msgstr "No."

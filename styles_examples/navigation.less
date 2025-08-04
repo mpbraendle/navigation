@@ -1,0 +1,103 @@
+/**
+ * @file styles/components/navigation.less
+ *
+ * Copyright (c) 2025- Simon Fraser University
+ * Copyright (c) 2025- John Willinsky
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_structure_sidebar
+ *
+ * @brief Classes for the sidebar navigation block elements
+ */
+
+.block_navigation_articles {
+    .nav_issues {
+        display: none;
+    }
+
+    .nav_articles {
+        .nav_first_article {
+            display: none;
+        }
+
+        .nav_previous_article {
+            a.nav_article_icon {
+                &:after {
+                    .fa();
+                    content: @fa-var-caret-up;
+                    width: 1em;
+                }
+            }
+        }
+
+        .nav_next_article {
+            a.nav_article_icon {
+                &:after {
+                    .fa();
+                    content: @fa-var-caret-down;
+                    width: 1em;
+                }
+            }
+        }
+
+        .nav_last_article {
+            display: none;
+        }
+
+        .toc {
+            a.nav_toc_icon {
+                &:after {
+                    .fa();
+                    content: @fa-var-bars;
+                    width: 1em;
+                }
+            }
+        }
+    }
+}
+
+.block_navigation_issues {
+   .nav_issues {
+        .nav_displayed_issue {
+            display: none;
+        }
+
+        .nav_first_issue {
+            display: none;
+        }
+
+        .nav_previous_issue {
+            a.nav_issue_icon {
+                &:after {
+                    .fa();
+                    content: @fa-var-caret-left;
+                    width: 1em;
+                }
+            }
+        }
+
+        .nav_next_issue {
+            a.nav_issue_icon {
+                &:after {
+                    .fa();
+                    content: @fa-var-caret-right;
+                    width: 1em;
+                }
+            }
+        }
+
+        .nav_last_issue {
+            display: none;
+        }
+
+        .nav_all_issues {
+            .nav_all_issues_icon {
+                &:after {
+                    .fa();
+                    content: @fa-var-bars;
+                    width: 1em;
+                }
+            }
+        }
+    }
+}

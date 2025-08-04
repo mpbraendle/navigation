@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Martin Brändle\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-12-29T19:41:00\n"
+"PO-Revision-Date: 2024-12-29T19:41:00\n"
+"Language: en\n"
+
+msgid "plugins.block.navigation"
+msgstr "Navigare"
+
+msgid "plugins.block.navigation.displayName"
+msgstr "Bloc de navigare"
+
+msgid "plugins.block.navigation.description"
+msgstr "Acest plugin oferă instrumente în bara laterală pentru navigarea între numere și articole."
+
+msgid "plugins.block.navigation.articles"
+msgstr "Răsfoiți articolele"
+
+msgid "plugins.block.navigation.previousissuearticle"
+msgstr "Ediția precedentă"
+
+msgid "plugins.block.navigation.nextissuearticle"
+msgstr "Ediția următoare"
+
+msgid "plugins.block.navigation.firstarticle"
+msgstr "Primul articol"
+
+msgid "plugins.block.navigation.previousarticle"
+msgstr "Articolul precedent"
+
+msgid "plugins.block.navigation.nextarticle"
+msgstr "Articolul următor"
+
+msgid "plugins.block.navigation.lastarticle"
+msgstr "Ultimul articol"
+
+msgid "plugins.block.navigation.toc"
+msgstr "Cuprins"
+
+msgid "plugins.block.navigation.issues"
+msgstr "Răsfoiți edițiile"
+
+msgid "plugins.block.navigation.firstissue"
+msgstr "Prima ediție"
+
+msgid "plugins.block.navigation.previousissue"
+msgstr "Ediția precedentă"
+
+msgid "plugins.block.navigation.nextissue"
+msgstr "Ediția următoare"
+
+msgid "plugins.block.navigation.lastissue"
+msgstr "Ultima ediție"
+
+msgid "plugin.block.navigation.archives"
+msgstr "Toate edițiile"
+
+msgid "plugins.block.navigation.volume"
+msgstr "Vol."
+
+msgid "plugins.block.navigation.number"
+msgstr "Nu."
