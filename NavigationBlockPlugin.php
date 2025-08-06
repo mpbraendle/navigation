@@ -136,7 +136,6 @@ class NavigationBlockPlugin extends BlockPlugin
             $blockTemplateFilename = 'block_articlenavig.tpl';
             $templateMgr->assign([
                 'contextUrl' => $contextUrl, 
-                'displayedIssue' => $displayedIssue,
                 'previousIssueArticle' => $previousIssueFirstArticle,
                 'nextIssueArticle' => $nextIssueFirstArticle,
                 'firstArticle' => $firstArticle,
@@ -151,7 +150,6 @@ class NavigationBlockPlugin extends BlockPlugin
             $blockTemplateFilename = 'block_issuenavig.tpl';
             $templateMgr->assign([
                 'contextUrl' => $contextUrl,
-                'displayedIssue' => $displayedIssue,
                 'firstIssue' => $firstIssue,
                 'previousIssue' => $previousIssue,
                 'nextIssue' => $nextIssue,
