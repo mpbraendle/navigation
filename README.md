@@ -16,8 +16,8 @@ LICENSE for the complete terms of this license.
  * Go to Settings -> Website -> Appearance -> Sidebar management -> and drag the " Plugin" to the sidebar section.
 
 ## Compatibility
-Plugin version 1.0.0.x is compatible with OJS 3.4.0-x.
-Plugin version 1.1.0.x is compativle with OJS 3.5.0-x.
+Plugin version 1.0.0.1 is compatible with OJS 3.4.0-x.
+Plugin version 1.1.0.0 is compatible with OJS 3.5.0-x.
 
 ## Styling
 In directory styles_examples, there is a navigation.less example that can be used e.g. with the default theme or a 
