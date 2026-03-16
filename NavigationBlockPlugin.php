@@ -19,7 +19,7 @@ use APP\facades\Repo;
 use APP\issue\Collector;
 use APP\issue\Issue;
 use APP\template\TemplateManager;
-use PKP\cache\CacheManager;
+use Illuminate\Support\Facades\Cache;
 use PKP\context\Context;
 use PKP\plugins\BlockPlugin;
 use PKP\submission\PKPSubmission;
@@ -179,28 +179,9 @@ class NavigationBlockPlugin extends BlockPlugin
      */    
     private function getCachedIssues(Context $context): array
     {
-        $cacheManager = CacheManager::getManager();
-        $cache = $cacheManager->getFileCache(
-            $context->getId(),
-            'issue_ids',
-            [$this, 'cacheDismiss']
-        );
-
-        $issue_ids = & $cache->getContents();
-        $currentCacheTime = time() - $cache->getCacheTime();
-
-        if (($issue_ids && $issue_ids != '[]') && $currentCacheTime < self::DAYS_SECONDS) {
-            return $issue_ids;
-        }
-
-        if ($currentCacheTime > self::DAYS_SECONDS) {
-            $cache->flush();
-        }
-
-        $cache->setEntireCache($this->getJournalIssues($context->getId()));
-        $issue_ids = & $cache->getContents();
-
-        return $issue_ids;
+        return Cache::remember('navigation-issues-' . $context->getId(), $this->DAYS_SECONDS, function() use ($context) {
+            return $this->getJournalIssues($context->getId());
+        });
     }
 
     /**
@@ -237,28 +218,9 @@ class NavigationBlockPlugin extends BlockPlugin
      */
     private function getCachedSubmissions(Context $context, Issue $issue): array
     {
-        $cacheManager = CacheManager::getManager();
-        $cache = $cacheManager->getFileCache(
-            $context->getId(),
-            'submission_ids_' . $issue->getId(),
-            [$this, 'cacheDismiss']
-        );
-
-        $submission_ids = & $cache->getContents();
-        $currentCacheTime = time() - $cache->getCacheTime();
-
-        if (($submission_ids && $submission_ids != '[]') && $currentCacheTime < self::DAYS_SECONDS) {
-            return $submission_ids;
-        }
-
-        if ($currentCacheTime > self::DAYS_SECONDS) {
-            $cache->flush();
-        }
-
-        $cache->setEntireCache($this->getIssueSubmissions($issue));
-        $submission_ids = & $cache->getContents();
-
-        return $submission_ids;
+        return Cache::remember('navigation-submissions-' . $context->getId() . "-" . $issue->getId(), $this->DAYS_SECONDS, function() use ($issue) {
+            return $this->getIssueSubmissions($issue);
+        });
     }
 
     /**
